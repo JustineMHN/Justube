@@ -1,0 +1,255 @@
+
+:root{
+    --main-color : #ccc;
+}
+/* GENERAL */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+    background-color: white;
+    width: 100%;
+    top: 0;
+}
+/* HEADER TOP */
+.header-top{
+    padding: 10px;
+    z-index: 1;
+}
+[alt="logo"]{
+    width: 40px;
+}
+[alt="logo"]+span{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.header-top-center{
+    background-color: var(--main-color);
+}
+.header-top-center input{
+    height: 90%;
+    border-right: none;
+}
+.header-top-center input+div{
+    background-color: #f2f2f2;
+    height: 85%;
+    text-align: center;
+    border-left: 0.5px solid var(--main-color);
+    border-right: 0.5px solid var(--main-color);
+}
+.header-top-center input+div i{
+    font-size: 1rem;
+    padding: 3px;
+}
+
+/* HEADER LEFT */
+nav.header-left{
+    background-color: white;
+    width: 15%;
+    height: 100vh;
+    margin-top: 0.3px;
+    z-index: 1;
+}
+ul.unlisted{
+    top: 0px;
+    margin: 0px;
+    padding-left: 10px;
+}
+ul.unlisted li a{
+    display: block;
+    padding: 10px 0px;
+}
+ul.unlisted li a.nav-link:hover{
+    background-color: var(--main-color);
+    font-weight: bold;
+}
+
+/* CONTAINER LIBRARY*/
+.container{
+    margin: 20px auto;
+    padding-top: 20px;
+}
+.library-items{
+    margin-top: 30px;
+}
+.library-item{
+   /*  display:flex;
+    flex-direction: column; */
+    width: 280px;
+    cursor: pointer;
+}
+[alt="Poster"]{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+[alt="Profile"]{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profile-picture{
+    text-align: center;
+}
+/* .library-video-meta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5;
+} */
+.library-video-meta:hover{
+    background-color: var(--main-color);
+}
+.video-meta .video-title{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.owner-video-fullname, .video-meta-data{
+    color: gray;
+}
+.owner-video-fullname{
+    padding-top: 10px;
+}
+.video-meta-data{
+    font-size: 0.9rem;
+}
+/* FOOTER */
+footer{
+    margin-top: 100px;
+    background-color: #2e2d2d;
+    color: white;
+}
+.footer-header{
+    padding-top: 15px;
+}
+.footer-content{
+   padding-top: 40px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.menu-lists-items>h5{
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 6px;
+}
+.menu-list{
+    
+    text-align: left;
+}
+.menu-list ul li a{
+    color: #f2f2f2;
+    font-size: 0.83rem;
+}
+.social-icons ul{
+    height: 60px;
+    padding-left: 0px;
+}
+.social-icons ul li{
+    display: inline-block;
+}
+.social-icons .social-item i{
+    width: 24px;
+    height: 24px;
+    padding: 5px ;
+    font-size: 1.5rem;
+    background-color: #343a40;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.footer-bottom{
+    color: var(--main-color);
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+}
+/* VERSION MOBILE */
+@media screen and (max-width: 350px) {
+    .footer-social-icons{
+        flex-direction: column;
+        gap: 0;
+    }
+    .social-icons, .app-icons{
+        flex: 1;
+    }
+    .social-icons ul{
+        margin: 0px;
+        padding-top: 20px;
+    }
+    .social-icons{
+        height: 80px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .library-item{
+        width: 70vw;
+    }
+    .profile-picture, .video-meta{
+        flex:auto;
+    }
+    
+    
+}
+
+@media screen and (min-width: 511px) and (max-width: 899px) {
+    [class$="-xl"]{
+        width: 95%;
+        margin: 20px auto;
+    }
+    .library-item{
+        width: 40vw;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    [alt="logo"]{
+        width: 25px;
+    }
+    [alt="logo"]+span{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    nav.header-left{
+        width: 30%;
+    }   
+    .header-top-center{
+        display: none;
+      }
+      .header-top-right .fas.fa-search {
+          display: block;
+      }
+      .header-top-right i:last-child{
+          padding-right: 10px;
+      }
+      i{
+        font-size: 1.1rem;
+      }
+      .social-icons .social-item i{
+        font-size: 1.2rem;
+          width: 19px;
+          height: 19px;
+      }
+}
+
+@media screen and (min-width: 651px) and (max-width: 899px) {
+    nav.header-left{
+        width: 20%;
+    }  
+}
+

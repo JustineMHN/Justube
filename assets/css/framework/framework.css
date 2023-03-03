@@ -1,0 +1,185 @@
+/* GENERAL */
+body{
+    margin: 0;
+    padding: 0;
+}
+input, textarea{
+    outline: none;
+    background-color: #f2f2f2;
+    border: 0.5px solid #ccc;
+    font-size: 1.2rem;
+}
+button{
+    cursor: pointer;
+}
+.text-center{
+    text-align: center;
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/* FLEX */
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+.flex-3{
+    flex: 3;
+}
+.flex-4{
+    flex: 4;
+}
+.flex-5{
+    flex: 5;
+}
+.flex-25{
+    flex: 25;
+}
+.gap-5{
+    gap: 5px;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-20{
+    gap: 20px;
+}
+.gap-25{
+    gap: 25px;
+}
+.gap-30{
+    gap: 30px;
+}
+.gap-35{
+    gap: 35px;
+}
+.gap-40{
+    gap: 40px;
+}
+
+.flex-center-h{
+    justify-content: center;
+}
+.flex-center-v{
+    align-items: center;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-start{
+    justify-content: left;
+}
+.flex-column{
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.nowrap{
+    flex-wrap: nowrap;
+}
+/* DISPLAY */
+.block{
+    display: block;
+}
+.inline-block{
+    display: inline-block;
+}
+.none{
+    display: none;
+}
+
+/* POSITIONS */
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+}
+.sticky{
+    position: sticky;
+    top: 20px;
+}
+
+/* PADDING & MARGIN */
+.p-0{
+    padding: 0px;
+}
+.p-5{
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-25{
+    padding: 25px;
+}
+.p-30{
+    padding: 30px;
+}
+.p-35{
+    padding: 35px;
+}
+
+.m-0{
+    margin: 0px;
+}
+.m-5{
+    margin: 5px;
+}
+.m-10{
+    margin: 10px;
+}
+.m-15{
+    margin: 15px;
+}
+.m-20{
+    margin: 20px;
+}
+.m-25{
+    margin: 25px;
+}
+.m-30{
+    margin: 30px;
+}
+.m-35{
+    margin: 35px;
+}
+
+/* ICONS */
+i{
+    color: #ccc;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.box-h{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 12px 18px rgba(0, 0, 0, 0.1) ;
+}
+.box-v{
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
+}
