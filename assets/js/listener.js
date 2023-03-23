@@ -64,13 +64,13 @@ try {
 // Utilisation de la méthode Post 
 // Envoi des données dans la base de données firebase avec la méthode post
 
-const API = "https://justbook-7f753-default-rtdb.firebaseio.com/justbook.json"
+const API = "https://justbook2-default-rtdb.firebaseio.com/justbook"
 const req = location.origin +"/api/library.json"  // L'adresse dynamique du fichier JSON 
 //const req = location.origin +"/api/piz.json"  // L'adresse dynamique du fichier JSON 
 
 // Récuperation de ressources du fichier JSON 
-var library = async(ressource)=>{
-    var respond = await fetch(ressource);
+var library = async(req)=>{
+    var respond = await fetch(req);
     if (!respond.ok) {
         return {Error: "La ressource n'a pas été récupérée."};
     }
@@ -94,6 +94,9 @@ var setlibrary = async()=>{
         var element = biblio[index]
         var data1 = await fetch(API, { //Envoi des données
             method : "POST", 
+            mode: "same-origin", // no-cors, *cors, same-origin
+           // cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+           // credentials: "same-origin", // include, *same-origin, omit
             body : JSON.stringify(element)
         })
         if (!data1.ok) {
